@@ -58,10 +58,12 @@ html::-webkit-scrollbar-thumb {
 
 /* Navigation */
 .navigation-container-main {
+  position: fixed;
   width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .logo-section {
@@ -90,7 +92,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   list-style: none;
 }
-
 .navigation-links {
   text-decoration: none;
   text-transform: capitalize;
@@ -100,11 +101,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* Landing Page */
-
 .landing-page-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -159,7 +157,8 @@ html::-webkit-scrollbar-thumb {
 .landing-page-info-container {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .landing-page-location-container,
@@ -168,10 +167,10 @@ html::-webkit-scrollbar-thumb {
   margin-right: 10%;
   width: 30%;
   height: 15%;
-  background-color: black;
   font-size: 1.2vw;
   letter-spacing: 2px;
   line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .landing-page-location-container {
@@ -216,4 +215,44 @@ html::-webkit-scrollbar-thumb {
 
 .landing-page-service-days-label {
   color: var(--secondary-font-color);
+}
+.landing-page-service-days-container:nth-of-type(2) {
+  margin-left: 10%;
+}
+
+/* About Page */
+.about-page-container {
+  width: 100%;
+  height: 100vh;
+}
+.about-page-header-section {
+  margin-top: 10%;
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-page-header-text {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  text-align: center;
+  margin-left: 15%;
+  width: 30%;
+  color: var(--secondary-font-color);
+  font-size: 2.5vw;
+  padding: 2% 5% 2% 5%;
+  text-transform: capitalize;
+  border-top: 2px solid var(--secondary-font-color);
+  border-bottom: 2px solid var(--secondary-font-color);
+  letter-spacing: 2px;
+}
+
+.about-page-header-image {
+  width: 40%;
+  margin-right: 5%;
+  height: 100%;
+  background: url("../images/about-header-image.jpg");
+  background-position: center;
+  background-size: cover;
 }
