@@ -223,7 +223,6 @@ html::-webkit-scrollbar-thumb {
 /* About Page */
 .about-page-container {
   width: 100%;
-  height: 100vh;
 }
 .about-page-header-section {
   margin-top: 10%;
@@ -240,19 +239,140 @@ html::-webkit-scrollbar-thumb {
   margin-left: 15%;
   width: 30%;
   color: var(--secondary-font-color);
-  font-size: 2.5vw;
+  font-size: 2vw;
   padding: 2% 5% 2% 5%;
-  text-transform: capitalize;
-  border-top: 2px solid var(--secondary-font-color);
-  border-bottom: 2px solid var(--secondary-font-color);
+  text-transform: uppercase;
+  border-top: 3px solid var(--secondary-font-color);
+  border-bottom: 3px solid var(--secondary-font-color);
   letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 .about-page-header-image {
-  width: 40%;
+  height: 70vh;
+  width: 45%;
   margin-right: 5%;
-  height: 100%;
   background: url("../images/about-header-image.jpg");
   background-position: center;
   background-size: cover;
 }
+
+.about-page-info-section {
+  width: 100%;
+  height: 85vh;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-page-info-images-section {
+  position: relative;
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
+}
+.about-page-info-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-page-info-image:nth-of-type(1) {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 70%;
+  height: 90%;
+  z-index: 5;
+  background-image: url("../images/about-section-one.jpg");
+}
+
+.about-page-info-image:nth-of-type(2) {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 50%;
+  height: 70%;
+  z-index: 6;
+  background-image: url("../images/about-section-two.jpg");
+}
+
+.about-page-info-image:nth-of-type(3) {
+  position: absolute;
+  top: 1%;
+  left: 15%;
+  width: 40%;
+  height: 80%;
+  background-color: var(--secondary-font-color);
+  z-index: 0;
+}
+
+.about-page-info-text-section {
+  margin-right: 5%;
+  width: 40%;
+  height: 100%;
+  font-family: "Montserrat";
+  padding: 13% 4% 0 5%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-page-info-text-header {
+  font-family: "Bartender";
+  font-size: 2.2vw;
+  letter-spacing: 1.2px;
+  color: var(--secondary-font-darker);
+  margin-bottom: 2%;
+}
+.about-page-chef-section {
+  margin-top: 8%;
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.about-page-chef-image {
+  margin-left: 15%;
+  width: 30%;
+  height: 75%;
+  background: url("../images/head-chef.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-page-chef-text {
+  margin-right: 8%;
+  width: 40%;
+  height: 100%;
+  padding-top: 8%;
+  text-transform: uppercase;
+}
+.about-page-chef-text-label {
+  color: grey;
+  font-size: 1.2vw;
+  letter-spacing: 1.2px;
+}
+.about-page-chef-text-name {
+  margin-top: 2%;
+  font-size: 2.5vw;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.about-page-chef-text-message {
+  margin-top: 3%;
+  padding-right: 2%;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  font-size: 1vw;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+}
+
+/* Menu Page */
+.menu;
