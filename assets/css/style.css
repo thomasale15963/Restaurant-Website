@@ -1,0 +1,219 @@
+:root {
+  --brown: #854d27;
+  --orange: #dd7230;
+  --yellow: #f4c95d;
+  --green: #e7e393;
+  --black: #04030f;
+
+  --primary-font-color: rgba(255, 255, 255, 0.75);
+  --secondary-font-color: #fde49ae0;
+  --secondary-font-darker: rgba(253, 228, 154, 0.7);
+}
+
+@font-face {
+  font-family: "Bartender";
+  src: url("../fonts/Bartender/Bartender.ttf");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/Dancing-Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Alt";
+  src: url("../fonts/Montserrat/MontserratAlternates-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--black);
+  font-family: "Bartender";
+  color: var(--primary-font-color);
+  background-color: var(--black);
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+}
+
+/* Navigation */
+.navigation-container-main {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-section {
+  margin-left: 3%;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.logo-section p {
+  font-family: "Dancing Script";
+  font-size: clamp(32px, 3vw, 4vw);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  background: -webkit-linear-gradient(var(--yellow), var(--primary-font-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navigation-section {
+  margin-right: 3%;
+  width: 38%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation-links {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1.1px;
+  font-size: clamp(15px, 1.1vw, 1.6vw);
+  color: var(--primary-font-color);
+}
+
+/* Landing Page */
+
+.landing-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.landing-page-image-container {
+  margin-left: 20%;
+  width: 35%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/landing-page-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-page-slogan-section-container {
+  line-height: 1.2;
+  opacity: 1;
+  transform: translate(-30%, -20%);
+  color: var(--secondary-font-color);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-size: 6vw;
+  -webkit-transform: translate(-30%, -30%);
+  -moz-transform: translate(-30%, -20%);
+  -ms-transform: translate(-30%, -20%);
+  -o-transform: translate(-30%, -20%);
+}
+.landing-page-slogan-top-container {
+  display: flex;
+  align-items: flex-end;
+}
+.landing-page-slogan-text-extra {
+  font-family: "Montserrat-Alt";
+  font-size: 1.5vw;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-left: 5%;
+  font-style: italic;
+  text-transform: lowercase;
+  padding: 1% 0.65%;
+  border-top: 1px solid var(--secondary-font-color);
+  border-bottom: 1px solid var(--secondary-font-color);
+}
+
+.landing-page-info-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page-location-container,
+.landing-page-service-container {
+  margin-left: 60%;
+  margin-right: 10%;
+  width: 30%;
+  height: 15%;
+  background-color: black;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.landing-page-location-container {
+  margin-top: 29%;
+}
+
+.landing-page-location-street {
+  display: flex;
+}
+.landing-page-location-icon {
+  width: 8%;
+  margin-right: 2%;
+  background-image: url("../icons/location.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.landing-page-location-city,
+.landing-page-location-building,
+.landing-page-location-phone {
+  margin-left: 10%;
+}
+.landing-page-location-phone {
+  color: var(--secondary-font-darker);
+}
+
+.landing-page-service-container {
+  margin-top: 2%;
+}
+.landing-page-service-days-container {
+  display: flex;
+}
+
+.landing-page-service-days-icon {
+  width: 8%;
+  margin-right: 2%;
+  background-image: url("../icons/clock.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.landing-page-service-days-label {
+  color: var(--secondary-font-color);
+}
