@@ -394,10 +394,11 @@ html::-webkit-scrollbar-thumb {
 }
 .menu-items-container {
   margin: 2% 17.5% 5% 17.5%;
+  padding: 1% 2% 1% 2%;
   width: 65%;
   height: 75%;
-  background-color: red;
   overflow: auto;
+  background-color: rgba(0, 0, 0, 0.45);
   scrollbar-width: thin;
   scrollbar-color: var(--black);
 }
@@ -415,7 +416,6 @@ html::-webkit-scrollbar-thumb {
 .menu-item {
   width: 100%;
   height: 10vh;
-  background-color: gray;
   margin-top: 2%;
 }
 .first-menu-item {
@@ -432,18 +432,24 @@ html::-webkit-scrollbar-thumb {
 
 .menu-item-name {
   text-align: start;
-  width: 16%;
-  background-color: #dd7230;
+  width: 15%;
 }
 
 .menu-item-liner {
-  width: 76%;
-  border-bottom: 1px dotted var(--secondary-font-color);
+  width: 70%;
+  border-bottom: 1px dashed var(--secondary-font-color);
 }
 .menu-item-price {
   text-align: end;
-  width: 8%;
-  background-color: aqua;
+  width: 15%;
+}
+.menu-item-bottom {
+  margin-top: 0.5%;
+  font-family: "Montserrat";
+  font-size: 0.8vw;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.5;
 }
 .menu-page-specials {
   width: 100%;
